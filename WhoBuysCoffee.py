@@ -48,7 +48,7 @@ def whoPays(drinkPrices, pairs, currentSum):
         #calculate the diff between the person's percentage and the coffee's percentage and
         #compare it to the max difference
         #update if the difference is the biggest so far
-        if (differenceInPercentages) > biggestDifference: 
+        if differenceInPercentages > biggestDifference: 
             biggestDifference = differenceInPercentages
             biggestDifferenceKey = person 
     
@@ -60,5 +60,8 @@ def whoPays(drinkPrices, pairs, currentSum):
 
 print("The person who pays this time is " + whoPays(drinkPrices, pairs, currentSum))
     
-        
+#for loop to test several iterations
+#for i in range(25):
+#    print("The person who pays this time is " + whoPays(drinkPrices, pairs, currentSum))
+#print(pairs)
         
